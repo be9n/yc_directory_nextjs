@@ -27,7 +27,7 @@ export default async function Navbar() {
               >
                 Logout
               </button>
-              <Link href={`/user/${session?.id}`}>
+              <Link href={`/user/${session.user?.id}`}>
                 <span>{session?.user?.name}</span>
               </Link>
             </>
